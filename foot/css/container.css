@@ -1,0 +1,124 @@
+
+/* 页面内容  版心 */
+.container {
+    /* 使用 calc 计算高度 */
+    height: calc(80% - 100px);
+    /* 设置版心宽度 */
+    width: 1000px;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 使用弹性布局 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 定义头顶空格距离10px */
+    margin-top:20px;
+}
+
+.container-height {
+    margin-top:10px;
+}
+
+.container-height1 {
+    margin-top:30px;
+}
+
+.container-top {
+    width: 100%;
+    height: 2px;
+    border-top: solid #000000 1px;
+}
+
+/* 左侧部分，用来放置用户信息 */
+.container-left {
+    height: 100%;
+    width: 200px;   
+}
+
+.container-left a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.container-right {
+    height: 100%;
+    /* 和左侧部分中间留出50px间隙 */
+    width: 765px;
+    text-align: center;
+}
+
+.container-right1 {
+    /* 和左侧部分中间留出50px间隙 */
+    width: 100%;
+    /* 若内容溢出则自动加上滚动条 */
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.container1 {
+    /* 使用 calc 计算高度 */
+    height: calc(80% - 100px);
+    /* 设置版心宽度 */
+    width: 1000px; 
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 使用弹性布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 定义头顶空格距离10px */
+    margin-top:20px;
+}
+
+.container1-imgBox {
+    border-top: 2px solid cadetblue;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+.container1-imgBox .img1{
+    display: block;
+}
+
+.container1-imgBox .img2{
+    display: none;
+}
+
+.container1-imgBox .img3{
+    display: none;
+}
+
+.container1 textarea{
+    height:120px;
+    width:80%;
+    resize:none;
+    border-radius: 10px;
+}
+
+.container-mes{
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+}
+
+.container-mes a {
+    color: rgb(85, 80, 80);
+    text-decoration: none;
+    font-size: 12px;
+    margin-left:12px;
+}
+
+.container-mes h5 {
+    text-align: left;
+    margin-left:12px;
+}
+
+.container-mes img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}

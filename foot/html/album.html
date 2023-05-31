@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../images/icon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    
+</head>
+    <!-- 导航栏 -->
+    <div>
+<div class="header">
+    <img src="../images/logo2.png" alt="">
+</div>
+<div class="nav">
+    <ul>
+        <li><a href="../html/index.html" class="detail">首页</a></li>
+        <li><a href="../html/blog.html" class="detail">推荐</a></li>
+        <li><a href="../html/diary.html" class="detail">读者随笔推荐</a></li>
+        <li><a href="../html/album.html" class="detail">图册</a></li>
+        <li><a href="../html/mes.html" class="detail">圆桌</a></li>
+    </ul>
+</div>
+</div>
+    <div class="main">
+        <!-- 版心 -->    
+        <div class="container1">
+            <div class="container-right">
+                <div class="container-right1">
+                    <div class="imgBox">
+                        <img class="img-slide img1" src="../images/h1.jpg" width="100%" height="500px" alt="1">
+                        <img class="img-slide img2" src="../images/h2.jpg" width="100%" height="500px" alt="2">
+                        <img class="img-slide img3" src="../images/h3.png" width="100%" height="500px" alt="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部栏 -->
+    <div>
+        <div class="footer">
+            <!-- left container -->
+            <div class="footer-container color-gray">
+                <div>推荐</div>
+                <div><a href="blog/1.html">《乌合之众》读书推荐-如何剥离群体？</a></div>
+                <div><a href="blog/2.html">《第四次工业革命》好书分享-传播学必读</a></div>
+
+            </div>
+            <!-- mid container -->
+            <div class="footer-container mid-footer-center">
+                <div>CopyRight © 2023 by 狸子 好书推荐.  All Rights Reserved</div>
+                <div><img src="../images/logo1.png">&nbsp;&nbsp;&nbsp;感谢参观狸子の读书推荐网站</div>
+            </div>
+            <!-- right container -->
+            <div class="footer-container color-gray">
+                <div>读者随笔</div>
+                <div><a href="diary.html">我以我血荐轩辕 民国·鲁迅《自题小像》</a></div>
+                <div><a href="diary.html">我以我血荐轩辕 民国·鲁迅《自题小像》</a></div>
+            </div>
+        </div>
+</div>
+</body>
+    <script type="text/javascript">
+        var index=0;
+        //效果
+        function ChangeImg() {
+            index++;
+            var a=document.getElementsByClassName("img-slide");
+            if(index>=a.length) index=0;
+            for(var i=0;i<a.length;i++){
+                a[i].style.display='none';
+            }
+            a[index].style.display='block';
+        }
+        //设置定时器，每隔两秒切换一张图片
+        setInterval(ChangeImg,3000);
+    </script>
+</html>

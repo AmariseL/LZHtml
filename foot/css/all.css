@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置整体页面高度 */
+html, body {
+    height: 100%;
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+.main {
+    /* 使用 calc 计算高度 */
+    height:100%;
+    /* 设置版心宽度 */
+    width: 100%;
+    /* 水平居中 */
+    margin: 0 auto;
+}
+
+/* 公共头部引用 */
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    /* 导航栏图片居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 公共头部引用的图标 */
+.header img {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+/* 导航栏格式 */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #949191;
+    /* 导航栏图片居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 导航栏字体格式 */
+.nav a{
+    padding: 0 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li {
+    list-style: none;
+}
+
+/* 查看详情 按钮 */
+.nav .detail{
+    /* 给颜色加上过渡效果 */
+    transition: all 0.3s;
+    position: relative;
+    flex: 0 0 20%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+}
+
+/* 查看详情按钮的鼠标 hover 效果 */
+.nav .detail:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* 公共底部引用 */
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    color: gray;
+    background-color: #3d3b3b;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.color-gray
+{
+    color: gainsboro;
+}
+.footer-container
+{
+    width: 34%;
+}
+a:link,a:visited
+{
+    color: gainsboro;
+}
+
+.mid-footer-center
+{
+    margin-top: 12px;
+}
+
+.footer img {
+    height: 29px;
+}
+
+
